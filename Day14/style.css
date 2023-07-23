@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 100vh;
+}
+#home{
+    background: linear-gradient(to right, #4daf54 , #3d8880);
+    color: #fff;
+    padding: 100px;
+}
+#home h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+#home .desc{
+    max-width: 500px;
+
+}
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .box{
+    width: 400px;
+    background-color: #000;
+    color: #fff;
+    margin: 0 20px;
+    border-radius:6px ;
+}
+#about .title{
+    font-size: 20px;
+}
+#team{
+    background: linear-gradient(180deg , #017c2c 50%, #fff 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#team .member{
+    width: 300px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: #fff;
+    margin: 0 20px;
+}
+#team .member .name{
+    font-size: 30px;
+    font-weight: 700;
+    color: #017c2c;
+}
+.left-to-right {
+	transform: translateX(-150%);
+}
+
+.left-to-right.start {
+	transition: 0.7s ease-in-out;
+	transform: translateX(0);
+}
+
+.right-to-left {
+	transform: translateX(150%);
+}
+
+.right-to-left.start {
+	transition: 0.7s ease-in-out;
+	transform: translateX(0);
+}
+.zoom {
+	transform: scale(0);
+}
+
+.zoom.start {
+	transition: 0.5s ease-in-out;
+	transform: unset;
+}

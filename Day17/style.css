@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #060802;
+    display: flex;
+
+}
+.text__typing{
+    margin: 200px auto;
+
+}
+.text__typing p{
+    color: #96ee1c;
+    font-weight: 700;
+    font-size: 64px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-shadow: 0 0 100px #96ee1c;
+    animation: typing 5s steps(30) infinite , blink 2s infinite ;
+}
+@keyframes typing{
+    0%,
+    100% {
+        width: 0%;
+    }
+    70%,
+    90%{
+        width: 100%;
+    }
+}
+@keyframes blink {
+    0%,
+    100% {
+       border-right: 8px solid transparent;
+    }
+    50%{
+        border-right: 8px solid #96ee1c;
+    }
+}
