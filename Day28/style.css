@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right , rgb(87, 223, 75) , rgb(232, 235, 80));
+}
+.container{
+    width: 350px;
+    background-color: #dadada;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+form{
+    border-bottom: 1px solid #3333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+form input{
+    width: 100%;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    padding: 6px 20px;
+    margin-right: 10px;
+}
+form button{
+    padding: 6px 16px;
+    background: green;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    color: #ffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+.todos{
+    list-style: none;
+}
+.todos li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.todos li i{
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
