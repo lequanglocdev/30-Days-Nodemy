@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hover</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
     * {
-        margin: 0;
         padding: 0;
+        margin: 0;
         box-sizing: border-box;
     }
 
@@ -22,7 +22,7 @@
         display: grid;
         place-content: center;
         background-color: rgb(29, 9, 83);
-        font-family: "Popins", sans-serif;
+
     }
 
     ul {
@@ -46,10 +46,9 @@
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        border: 8px solid var(--clr);
-        /* border: 8px solid #E44D26; */
+        border: 8px solid var(--color);
         border-left: 8px solid transparent;
-        animation: spin 8s linear infinite;
+        animation: spin 4s linear infinite;
     }
 
     li .base::after {
@@ -60,8 +59,7 @@
         top: 9px;
         left: 9px;
         border-radius: 50%;
-        background-color: var(--clr);
-        /* background: #E44D26; */
+        background-color: var(--color);
     }
 
     li .base,
@@ -71,7 +69,7 @@
         color: #b5b5b5;
         transform: rotateX(60deg) rotateZ(-45deg);
         cursor: pointer;
-        transition: 0.5s ease;
+        transition: 0.5 ease-in-out;
     }
 
     li .title {
@@ -97,15 +95,14 @@
 
     .base:hover+.title+.icon {
         transform: rotateY(30deg) skewY(-24deg) translateY(-160px);
-        color: var(--clr);
-        filter: drop-shadow(0 0 3px var(--clr));
+        color: var(--color);
         animation: wave 1s ease-in-out infinite;
     }
 
     .base:hover+.title {
-        color: var(--clr);
+        color: var(--color);
         transform: rotateY(30deg) skewY(-24deg) translateY(-90px);
-        text-shadow: 0 0 3px var(--clr);
+        text-shadow: 0 0 3px var(--color);
         transition-delay: 0.1s;
         opacity: 1;
         animation: wave 1s ease-in-out infinite;
@@ -128,31 +125,32 @@
             margin-bottom: 0;
         }
 
-        50% {
+        100% {
             margin-bottom: 15px;
+
         }
     }
 </style>
 
 <body>
     <ul>
-        <li style="color:#E44D26">
+        <li style="--color: #E44D26;">
             <span class="base"></span>
             <span class="title">HTML5</span>
             <span class="icon"><i class="fa-brands fa-html5"></i></span>
         </li>
-        <li style="color:#264de4 ">
+        <li style="--color: #264de4;">
             <span class="base"></span>
             <span class="title">CSS3</span>
             <span class="icon"><i class="fa-brands fa-css3-alt"></i></span>
         </li>
-        <li style="color:#f0db4f">
+
+        <li style="--color: #f0db4f;">
             <span class="base"></span>
-            <span class="title">JavaScript</span>
-            <span class="icon"><i class="fa-brands fa-js"></i></span>
+            <span class="title">Javascript</span>
+            <span class="icon"> <i class="fa-brands fa-js"></i></span>
         </li>
     </ul>
-
 </body>
 
 </html>
