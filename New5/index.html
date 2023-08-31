@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: rgb(8, 0, 0);
+
+    }
+
+    .main {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .main .Eyes {
+        position: absolute;
+        margin: 50% auto;
+        width: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .main .eye1 {
+        position: absolute;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .main .eye1 img {
+        width: 100%;
+        border-radius: 50%;
+        opacity: 0;
+        transition: 2s;
+    }
+
+    .main .Eyes img {
+        margin: 2px;
+        width: 100%;
+        border-radius: 50%;
+        transition: 2s;
+    }
+
+    .main:hover .Eyes img {
+        transform: rotate(calc(-325deg * 2));
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .main:hover .eye1 img {
+        transform: rotate(calc(-324deg * 2));
+        opacity: 1;
+        transition: 1s;
+        z-index: 1000;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="Eyes">
+            <img src="./assets/image/image1.png" alt="">
+        </div>
+        <div class="eye1">
+            <img src="./assets/image/image2.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
