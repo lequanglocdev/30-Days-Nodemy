@@ -7,15 +7,22 @@
 html {
   font-size: 62.5%;
 }
-
+h3{
+  font-size: 40px;
+  color: rgba(105, 122, 12, 0.846);
+  text-align: center;
+}
 .container {
   min-height: 100vh;
   background-image: linear-gradient(to right, #bdbebd, #98dcd5);
+  
+}
+
+.dashboard{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
- 
 }
 .container a{
   text-decoration: none;
